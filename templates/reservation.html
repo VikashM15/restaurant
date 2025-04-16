@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Reserve a Table</h2>
+    <form action="/reservation" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="date" name="date" required><br>
+        <input type="time" name="time" required><br>
+        <input type="number" name="guests" placeholder="Number of Guests" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
